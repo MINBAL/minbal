@@ -6,4 +6,6 @@
 
   1. Install [`Middleman`](https://middlemanapp.com/basics/install/)
 
-  2. Run `middleman server` to develop
+  2. Run `middleman server` to develop 
+
+          go to http://localhost:4567/ 
