@@ -10,8 +10,10 @@
 
   3. Run `middleman server` to develop 
 
-          go to http://localhost:4567/ 
+          go to [`http://localhost:4567/`](http://localhost:4567/) 
 
 ### Deploy to gh-pages
 
   1. Run `middleman build && middleman deploy`
+
+          go to [`https://minbal.github.io/minbal/`](https://minbal.github.io/minbal/) 
