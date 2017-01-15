@@ -1,0 +1,11 @@
+@import "colors";
+
+$sans-serif: 'Roboto', sans-serif;
+$serif: 'Playfair Display', serif;
+$monospace: 'Source Code Pro', monospace;
+
+h1, h2, h3,
+h4, h5 {
+	color: $minbal-blue;
+	font-family: $serif;
+}
