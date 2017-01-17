@@ -1,0 +1,47 @@
+@import "../mixins/flexbox";
+@import "../mixins/vertical-center-flex";
+
+
+%panel-bg {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.panel-bg-1 {
+	@extend %panel-bg;
+	background-image: url('http://minbal.com/images/bg.jpg');
+}
+
+.panel-bg-2 {
+	@extend %panel-bg;
+	background-image: url('http://minbal.com/images/bg3.jpg');
+}
+
+.panel-bg-3 {
+	@extend %panel-bg;
+	background-image: url('http://minbal.com/images/bg4.jpg');
+}
+
+.panel-bg-4 {
+	@extend %panel-bg;
+	background-image: url('http://minbal.com/images/bg5.jpg');
+}
+
+.panel-content {
+	@include vertical-center-flex;
+	height: 100vh;
+	p {
+		border-top: 1px solid #4d13fe;
+		border-bottom: 1px solid #4d13fe;
+		width: 80%;    
+		padding: 1em 0;
+    font-family: $sans-serif;
+    font-weight: 300;
+    color: #4d13fe;
+    font-size: 16pt;
+    line-height: 1.6em;
+	}
+}
