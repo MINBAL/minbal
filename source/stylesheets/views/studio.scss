@@ -1,47 +1,79 @@
+@import "../mixins/aspect-ratio";
 @import "../mixins/flexbox";
 @import "../mixins/vertical-center-flex";
 
+nav {
+	background-color: white; 
+	border-bottom: 5px solid black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 1000;
+	.nav-innerwrap {
+		@include flexbox;
+		@include flex-direction(row);
+		@include align-items(center);
+		height: 75px;
+		margin: auto;
+		max-width: 1164px;
+		width: 95%;
+	}
+	.menu {
+		display: none;
+		margin-left: auto;
+		a {
+			color: black;
+		}
+		li {
+			font-family: $monospace;
+			letter-spacing: 2px;
+			margin-right: 40px;
+			&:last-of-type {
+				margin: 0;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
 
-%panel-bg {
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.hero {
+	@include vertical-center-flex;
+	color: black;
 	height: 100vh;
-}
-
-.panel-bg-1 {
-	@extend %panel-bg;
-	background-image: url('http://minbal.com/images/bg.jpg');
-}
-
-.panel-bg-2 {
-	@extend %panel-bg;
-	background-image: url('http://minbal.com/images/bg3.jpg');
-}
-
-.panel-bg-3 {
-	@extend %panel-bg;
-	background-image: url('http://minbal.com/images/bg4.jpg');
-}
-
-.panel-bg-4 {
-	@extend %panel-bg;
-	background-image: url('http://minbal.com/images/bg5.jpg');
+	position: relative;
+	h1 {
+		background: white;
+		border: 8px solid black;
+		letter-spacing: 10px;
+		padding: 40px;
+		font-size: 8vw;
+	}
 }
 
 .panel-content {
-	@include vertical-center-flex;
+	border: 1px black;
+	border-style: solid none;
+	font-size: 14pt;
+	font-weight: 300;
 	height: 100vh;
-	p {
-		border-top: 1px solid #4d13fe;
-		border-bottom: 1px solid #4d13fe;
-		width: 80%;    
-		padding: 1em 0;
-    font-family: $sans-serif;
-    font-weight: 300;
-    color: #4d13fe;
-    font-size: 16pt;
-    line-height: 1.6em;
+	line-height: 1.6em;
+	margin: auto;
+	max-width: 1164px;
+	padding: 5% 0;
+	width: 100%;
+}
+
+
+
+@media (min-width: $screen-lg) {
+	nav {
+		.menu {
+			@include flexbox;
+			@include flex-direction(row);
+		}
 	}
 }
