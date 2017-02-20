@@ -24,11 +24,11 @@ html {
 }
 
 body {
-  background: $black;
-  color: $white;
+  background: $white;
+  color: $black;
   font-family: $sans-serif;
   &.studio {
-    color: $cream;
+    color: $black;
   }
 }
 

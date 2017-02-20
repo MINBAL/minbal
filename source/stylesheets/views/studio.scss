@@ -17,7 +17,7 @@
 .content-container {
 	@include flexbox;
 	@include flex-direction(column);
-	background: $black;
+	background: $white;
 	position: relative;
 	width: 100%;
 }

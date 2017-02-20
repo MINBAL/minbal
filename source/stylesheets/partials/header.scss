@@ -1,8 +1,8 @@
 @import "../mixins/flexbox";
 
 nav {
-	background: black;
-	border-bottom: 1px solid $white;
+	background: $white;
+	border-bottom: 1px solid $black;
 	font-size: 14px;
 	position: fixed;
 	top: 0;
@@ -23,7 +23,7 @@ nav {
 		display: none;
 		margin-left: auto;
 		a {
-			color: white;
+			color: $black;
 		}
 		li {
 			font-family: $monospace;
