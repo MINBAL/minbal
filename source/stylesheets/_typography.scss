@@ -23,8 +23,9 @@ h4, h5 {
 
 .h3 {
 	display: inline-block;
+	font-family: $monospace;
 	font-weight: bold;
-	line-height: 1.6em;
+	letter-spacing: 3px;
 	text-transform: uppercase;
 	width: 250px;
 }
