@@ -6,12 +6,7 @@
 
 .hero {
 	@include hero;
-	background-image: url('https://static1.squarespace.com/static/58a0d3d646c3c41632ff44b9/t/58a14d1b46c3c4163204c46c/1486966045462/MNBL_cnslefx.jpg');
-}
-
-.hero-2 {
-	@include hero;
-	background-image: url('https://static1.squarespace.com/static/58a0d3d646c3c41632ff44b9/t/58a1dad2b3db2b39454e7d9a/1487002340964/MNBL_bassfx.jpg');
+	background-image: url('https://s3.amazonaws.com/minbal/studio/console.jpg');
 }
 
 .content-container {
@@ -23,14 +18,34 @@
 }
 
 .content-container-body {
-	font-size: 17px;
+	@include flexbox;
+	@include flex-direction(column);
 	font-weight: 300;
 	line-height: 1.6em;
 	margin: auto;
 	padding: 4em 0;
 	width: 90%;
+	.inner {
+		width: 100%;
+		a {
+			display: inline;
+		}
+	}
+	aside {
+		font-size: 12px;
+		width: 100%;
+		h3 {
+			font-weight: bold;
+			margin-bottom: .15em;
+			text-transform: uppercase;
+		}
+		li {
+			margin-bottom: 1em;
+		}
+	}
 	p {
-		margin: 1em 0;
+		margin: 0;
+		margin-bottom: 1em;
 	}
 }
 
@@ -40,8 +55,19 @@
 		@include flex-wrap(wrap);
 	}
 	.content-container-body {
+		@include flex-direction(row);
+		margin: auto;
 		padding: 8em 0;
 		max-width: 960px;
 		width: 100%;
+		&.booking {
+			@include flex-direction(column);
+		}
+		.inner {
+			margin-right: 4em;
+		}
+		aside {
+			width: 230px;
+		}
 	}
 }
