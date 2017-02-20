@@ -1,143 +1,47 @@
 @import "../mixins/aspect-ratio";
 @import "../mixins/flexbox";
 @import "../mixins/ease";
+@import "../mixins/hero";
 @import "../mixins/vertical-center-flex";
 
-nav {
-	background-color: white; 
-	border-bottom: 5px solid black;
-	position: fixed;
-	top: 0;
-	left: 0;
-	text-transform: uppercase;
-	width: 100%;
-	z-index: 1000;
-	.nav-innerwrap {
-		@include flexbox;
-		@include flex-direction(row);
-		@include align-items(center);
-		height: 75px;
-		margin: auto;
-		max-width: 1164px;
-		width: 95%;
-	}
-	.menu {
-		display: none;
-		margin-left: auto;
-		a {
-			color: black;
-		}
-		li {
-			font-family: $monospace;
-			letter-spacing: 2px;
-			margin-right: 40px;
-			&:last-of-type {
-				margin: 0;
-			}
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-	}
+.hero {
+	@include hero;
+	background-image: url('https://static1.squarespace.com/static/58a0d3d646c3c41632ff44b9/t/58a14d1b46c3c4163204c46c/1486966045462/MNBL_cnslefx.jpg');
 }
 
-.hero {
-	@include vertical-center-flex;
-	background-size: cover;
-  background-attachment: fixed;
-	background-image: url('https://s3.amazonaws.com/minbal/images/control_room_1.jpg');
-	color: black;
-	height: 100vh;
-	position: relative;
-	h1 {
-		background: rgba(255,255,255,0.8);
-		border: 8px solid black;
-		letter-spacing: 10px;
-		padding: 40px;
-		font-size: 8vw;
-		&:hover {
-			background: linear-gradient(270deg, #ff4600, #ff00bd);
-			cursor: pointer;
-		}	
-	}
+.hero-2 {
+	@include hero;
+	background-image: url('https://static1.squarespace.com/static/58a0d3d646c3c41632ff44b9/t/58a1dad2b3db2b39454e7d9a/1487002340964/MNBL_bassfx.jpg');
 }
 
 .content-container {
 	@include flexbox;
 	@include flex-direction(column);
-	margin: 2em auto;
-	max-width: 1024px;
+	background: $black;
 	position: relative;
-	width: 95%;
-}
-
-.content-container-image {
 	width: 100%;
-	img {
-		display: block;
-		position: relative;
-		width: 100%;		
-	}
-}
-
-.content-container-header {
-	padding: 2em 0;
-	text-align: center;
-	width: 100%;
-	h2 {
-		background: rgba(255, 255, 255, .8);	
-		border: 10px solid black;
-		display: inline-block;
-		font-size: 1.5em;
-		font-weight: 300;
-		letter-spacing: 5px;
-		padding: 20px 40px;
-		text-align: center;
-		text-transform: uppercase;
-		&:hover {
-			background: linear-gradient(270deg, #ff4600, #ff00bd);
-			cursor: pointer;
-		}		
-	}
 }
 
 .content-container-body {
-	font-size: 12pt;
+	font-size: 17px;
 	font-weight: 300;
 	line-height: 1.6em;
-	margin-left: auto;
-	max-width: 800px;
-	width: 100%;
+	margin: auto;
+	padding: 4em 0;
+	width: 90%;
 	p {
 		margin: 1em 0;
 	}
 }
 
-
-
 @media (min-width: $screen-lg) {
-	nav {
-		.menu {
-			@include flexbox;
-			@include flex-direction(row);
-		}
-	}
 	.content-container {
 		@include flex-direction(row);
 		@include flex-wrap(wrap);
-		margin: 8em auto;
-	}
-	.content-container-header {
-		padding: 0;
-		padding-top: 4em;
-		width: 30%;
-		h2 {
-			font-size: 2em;
-		}
 	}
 	.content-container-body {
-		font-size: 16pt;
-		padding: 2em 0;
-		width: 70%;
+		padding: 8em 0;
+		max-width: 960px;
+		width: 100%;
 	}
 }
