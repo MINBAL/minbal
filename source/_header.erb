@@ -3,13 +3,13 @@
 		<div class="nav-innerwrap">
 			<ul class="menu">
 				<li>
-					<%= link_to 'Studio', 'studio' %>
+					<%= link_to 'Studio', "#{config[:site_url]}/studio" %>
 				</li>
 				<li>
-					<%= link_to 'Licensing', 'licensing' %>
+					<%= link_to 'Licensing', "#{config[:site_url]}/licensing" %>
 				</li>
 				<li>
-					<%= link_to 'Composition', 'composition' %>
+					<%=link_to "Composition", "#{config[:site_url]}/composition" %>
 				</li>
 			</ul>
 		</div>

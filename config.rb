@@ -2,6 +2,8 @@
 # Page options, layouts, aliases and proxies
 ###
 
+config[:site_url] = ''
+
 # Per-page layout changes:
 #
 # With no layout
@@ -47,6 +49,7 @@ configure :build do
   # activate :minify_javascript
   activate :relative_assets
   set :relative_links, true
+  config[:site_url] = '/minbal'
 end
 
 # Deploy this site
