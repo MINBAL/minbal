@@ -22,6 +22,7 @@ body.studio:before {
 
 .hero {
 	@include hero;
+	color: rgba(221,225,168,.96);
 }
 
 .content-container {
@@ -38,7 +39,7 @@ body.studio:before {
 
 .projects {
 	h3 {
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid rgba(221,225,168,.96);
 		font-size: .75em;
 		margin-bottom: 1em;
 		padding-bottom: 1em;
@@ -75,13 +76,15 @@ body.studio:before {
 		}
 	}
 	.h3 {
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid rgba(221,225,168,.96);
 		margin-bottom: 1em;
 		padding-bottom: 1em;
 		text-align: center;
 		width: 100%;
 	}
 	aside {
+		border-top: 5px solid rgba(221,225,168,.96);
+		padding-top: 1em;
 		font-size: 12px;
 		width: 100%;
 		h3 {
