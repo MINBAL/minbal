@@ -27,6 +27,8 @@ body {
   background: $white;
   color: $black;
   font-family: $sans-serif;
+  height: 100%;
+  overflow: scroll;
   &.studio {
     color: $black;
   }
