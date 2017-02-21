@@ -7,12 +7,14 @@
 .hero {
 	@include hero;
 	background-image: url('https://s3.amazonaws.com/minbal/studio/console.jpg');
+	margin-bottom: 4em;
 }
 
 .content-container {
 	@include flexbox;
 	@include flex-direction(column);
 	background: $white;
+	padding-bottom: 4em;
 	position: relative;
 	width: 100%;
 }
@@ -23,13 +25,19 @@
 	font-weight: 300;
 	line-height: 1.6em;
 	margin: auto;
-	padding: 4em 0;
 	width: 90%;
 	.inner {
 		width: 100%;
 		a {
 			display: inline;
 		}
+	}
+	.h3 {
+		border-bottom: 1px solid black;
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+		text-align: center;
+		width: 100%;
 	}
 	aside {
 		font-size: 12px;
@@ -41,6 +49,8 @@
 		}
 		li {
 			margin-bottom: 1em;
+			@include flexbox;
+			@include flex-direction(column);
 		}
 	}
 	p {
@@ -50,14 +60,17 @@
 }
 
 @media (min-width: $screen-lg) {
+	.hero {
+		margin-bottom: 8em;
+	}
 	.content-container {
 		@include flex-direction(row);
 		@include flex-wrap(wrap);
+		padding-bottom: 8em;
 	}
 	.content-container-body {
 		@include flex-direction(row);
 		margin: auto;
-		padding: 8em 0;
 		max-width: 960px;
 		width: 100%;
 		&.booking {
@@ -65,6 +78,13 @@
 		}
 		.inner {
 			margin-right: 4em;
+		}
+		.h3 {
+			border: 0;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			text-align: left;
+			width: 250px;
 		}
 		aside {
 			width: 230px;

@@ -1,7 +1,6 @@
 @import "colors";
 
 $sans-serif: 'Roboto', sans-serif;
-$serif: 'Playfair Display', serif;
 $monospace: 'Source Code Pro', monospace;
 
 h1, h2, h3,
@@ -14,8 +13,8 @@ h4, h5 {
 .h2 {
 	border: 5px solid white;
 	font-size: 6vw;
-	font-weight: 100;
-	letter-spacing: 15px;
+	font-weight: 500;
+	letter-spacing: 5px;
 	padding: 20px;
 	text-align: center;
 	text-transform: uppercase;
@@ -27,5 +26,4 @@ h4, h5 {
 	font-weight: bold;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	width: 250px;
 }
