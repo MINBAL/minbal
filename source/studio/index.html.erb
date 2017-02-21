@@ -45,7 +45,6 @@ title: STUDIO - MINBAL
 	<div class="content-container-body">
 		<h3 class="h3">BOOKING</h3>
 		<div class="inner">
-
 			<p>Freelance engineers are welcome. Assistants are available for $100/day or $50/half-day.</p>
 			<p>Rates are based on 10 hour days. Half-days should run no longer than 5 hours.</p>
 			<p>We require a 50% deposit or payment in full to book studio time. A discount will be applied if you choose to pay in full when you book your session. Rates for paying in full are $225 per day or $155 per half-day. We are able to hold dates for a short time in order to confirm potential dates prior to booking.</p>
@@ -66,5 +65,25 @@ title: STUDIO - MINBAL
 
 <section class="content-container">
 	<div class="content-container-body">
+		<h3 class="h3">PROJECTS</h3>
+		<div class="inner projects">
+		<h3>Artists</h3>
+		<ul class="projects-list">
+		  <% data.projects.artists.each do |f| %>
+		  	<li><%= f %></li>
+		  <% end %>
+		</ul>
+		<h3>Labels</h3>
+		<ul class="projects-list">
+		  <% data.projects.labels.each do |f| %>
+		  	<li><%= f %></li>
+		  <% end %>
+		</ul>
+		<h3>Film</h3>
+		<ul class="projects-list">
+		  <% data.projects.film.each do |f| %>
+		  	<li><%= f %></li>
+		  <% end %>
+		</ul>
 	</div>
 </section>

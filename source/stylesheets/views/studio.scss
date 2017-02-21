@@ -19,6 +19,30 @@
 	width: 100%;
 }
 
+.projects {
+	h3 {
+		border-bottom: 1px solid black;
+		font-size: .75em;
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+		text-transform: uppercase;
+		width: 100%;
+	}
+	.projects-list {
+		@include flexbox;
+		@include flex-flow(row wrap);
+		@include justify-content(space-between);
+		font-size: 12px;
+		margin-bottom: 2em;
+		width: 100%;
+		li {
+			margin-bottom: .5em;
+			width: 48%;
+		}
+	}
+}
+
+
 .content-container-body {
 	@include flexbox;
 	@include flex-direction(column);
@@ -28,8 +52,9 @@
 	width: 90%;
 	.inner {
 		width: 100%;
-		a {
-			display: inline;
+		p {
+			margin: 0;
+			margin-bottom: 1em;
 		}
 	}
 	.h3 {
@@ -53,15 +78,18 @@
 			@include flex-direction(column);
 		}
 	}
-	p {
-		margin: 0;
-		margin-bottom: 1em;
-	}
 }
 
 @media (min-width: $screen-lg) {
 	.hero {
 		margin-bottom: 8em;
+	}
+	.projects {
+		.projects-list {
+			li {
+				width: 32%;
+			}
+		}
 	}
 	.content-container {
 		@include flex-direction(row);
@@ -72,22 +100,26 @@
 		@include flex-direction(row);
 		margin: auto;
 		max-width: 960px;
-		width: 100%;
+		width: 95%;
 		&.booking {
 			@include flex-direction(column);
 		}
 		.inner {
 			margin-right: 4em;
+			width: 60%;
+			&.projects {
+				width: 80%;
+			}
 		}
 		.h3 {
 			border: 0;
 			margin-bottom: 0;
 			padding-bottom: 0;
 			text-align: left;
-			width: 250px;
+			width: 20%;
 		}
 		aside {
-			width: 230px;
+			width: 20%;
 		}
 	}
 }
