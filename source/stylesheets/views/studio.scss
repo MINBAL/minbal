@@ -63,7 +63,7 @@ body.studio:before {
 		@include flexbox;
 		@include flex-flow(row wrap);
 		@include justify-content(space-between);
-		font-size: 12px;
+		font-size: 14px;
 		margin-bottom: 2em;
 		width: 100%;
 		li {
