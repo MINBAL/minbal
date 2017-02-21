@@ -87,6 +87,7 @@ body.studio:before {
 		font-family: $monospace;
 		padding-top: 1em;
 		font-size: 12px;
+		text-align: center;
 		width: 100%;
 		h3 {
 			font-weight: bold;
@@ -146,6 +147,7 @@ body.studio:before {
 			width: 20%;
 		}
 		aside {
+			text-align: left;
 			width: 20%;
 		}
 	}
