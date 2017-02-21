@@ -35,6 +35,19 @@ body.studio:before {
 	&.minbal {
 		padding-top: 4em;
 	}
+	&.booking {
+		aside {
+			font-size: 14px;
+			font-weight: bold;
+			order: 2;
+		}
+		.h3 {
+			order: 1;
+		}
+		.inner {
+			order: 3;
+		}
+	}
 }
 
 .projects {
@@ -76,28 +89,30 @@ body.studio:before {
 		}
 	}
 	.h3 {
-		border-bottom: 1px solid rgba(221,225,168,.96);
-		margin-bottom: 1em;
+		font-size: 1.35em;
 		padding-bottom: 1em;
 		text-align: center;
 		width: 100%;
 	}
 	aside {
-		border-top: 5px solid rgba(221,225,168,.96);
 		font-family: $monospace;
 		padding-top: 1em;
 		font-size: 12px;
-		text-align: center;
 		width: 100%;
 		h3 {
 			font-weight: bold;
 			margin-bottom: .15em;
 			text-transform: uppercase;
 		}
+		ul {
+			@include flexbox;
+			@include flex-flow(row wrap);		
+		}
 		li {
-			margin-bottom: 1em;
+			margin-bottom: 1em; 
 			@include flexbox;
 			@include flex-direction(column);
+			width: 50%;
 		}
 	}
 }
@@ -123,15 +138,23 @@ body.studio:before {
 		&.minbal {
 			padding-top: 8em;
 		}
+		&.booking {
+			aside {
+				order: initial;
+			}
+			.h3 {
+				order: initial;
+			}
+			.inner {
+				order: initial;
+			}
+		}
 	}
 	.content-container-body {
 		@include flex-direction(row);
 		margin: auto;
 		max-width: 960px;
 		width: 95%;
-		&.booking {
-			@include flex-direction(column);
-		}
 		.inner {
 			margin-right: 4em;
 			width: 60%;
@@ -147,8 +170,15 @@ body.studio:before {
 			width: 20%;
 		}
 		aside {
+			border-top: 5px solid rgba(221,225,168,.96);
 			text-align: left;
 			width: 20%;
+			ul {
+				@include flex-flow(column nowrap);	
+			}
+			li {
+				width: 100%;
+			}
 		}
 	}
 }
