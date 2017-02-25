@@ -13,25 +13,13 @@
 
   <body class="<%= page_classes %>">
     <main class="">
-      <div class="hamburger" id="hamburger-2">
+      <div class="toggle-menu-btn">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
         </div>
       </div>
-      <div class="page-push-nav">
-        <ul>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#booking">Booking</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-        </ul>
-      </div>
+      <%= partial "page_push_nav" %>
       <div class="page-push-wrap">
         <%= partial "header" %>
         <%= yield %>

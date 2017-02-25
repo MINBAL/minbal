@@ -84,8 +84,8 @@
 	}
 	aside {
 		font-family: $monospace;
-		padding-top: 1em;
 		font-size: 12px;
+		padding-top: 1em;
 		width: 100%;
 		h3 {
 			font-weight: bold;
@@ -97,9 +97,9 @@
 			@include flex-flow(row wrap);		
 		}
 		li {
-			margin-bottom: 1em; 
-			@include flexbox;
 			@include flex-direction(column);
+			@include flexbox;
+			margin-bottom: 1em; 
 			width: 50%;
 		}
 	}
@@ -163,82 +163,6 @@
 			}
 			li {
 				width: 100%;
-			}
-		}
-	}
-}
-
-main {
-	overflow-x: hidden;
-	position: relative;
-	.hamburger {
-		background: white;
-		color: black;
-		cursor: pointer;
-		display: block;
-		padding: 10px;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1000;
-		.line{
-		  width: 30px;
-		  height: 1px;
-		  background-color: black;
-		  display: block;
-		  margin: 9px auto;
-		  -webkit-transition: all 0.3s ease-in-out;
-		  -o-transition: all 0.3s ease-in-out;
-		  transition: all 0.3s ease-in-out;
-		}
-	}
-	.page-push-nav {
-		border-right: 1px solid rgba(221,225,168,.96);
-		-webkit-transform: translate3d(-100%, 0, 0);
-		transform: translate3d(-100%, 0, 0);
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 100;
-		width: 300px;
-		height: 100%;
-		background: white;
-		-webkit-transition: all 0.5s;
-		transition: all 0.5s;
-		ul {
-			padding: 60px 15px;
-		}
-	}	
-	.page-push-wrap {
-		-webkit-transition: -webkit-transform 0.5s;
-		transition: transform 0.5s;
-		height: 100%;
-		transform-style: preserve-3d;
-	}
-	&.open {
-		.page-push-nav {
-	    -webkit-transform: translate3d(0, 0, 0);
-			transform: translate3d(0, 0, 0);
-		}	
-		.page-push-wrap {
-			-webkit-transform: translate3d(300px, 0, 0);
-			transform: translate3d(300px, 0, 0);
-		}
-		.hamburger .line {
-			&:nth-child(1) {
-			  -webkit-transform: translateY(10px) rotate(45deg);
-			  -ms-transform: translateY(10px) rotate(45deg);
-			  -o-transform: translateY(10px) rotate(45deg);
-			  transform: translateY(10px) rotate(45deg);
-			}
-			&:nth-child(2) {
-			  opacity: 0;
-			}
-			&:nth-child(3) {
-			  -webkit-transform: translateY(-10px) rotate(-45deg);
-			  -ms-transform: translateY(-10px) rotate(-45deg);
-			  -o-transform: translateY(-10px) rotate(-45deg);
-			  transform: translateY(-10px) rotate(-45deg);
 			}
 		}
 	}

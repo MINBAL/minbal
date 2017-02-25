@@ -26,7 +26,7 @@ html {
 body {
   background: $white;
   color: $black;
-  font-family: $sans-serif;
+  font-family: $sans-serif; 
   &.studio {
     color: $black;
   }
@@ -40,8 +40,98 @@ a {
 }
 
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
+}
+
+main {
+  overflow-x: hidden;
+  position: relative;
+  .toggle-menu-btn {
+    background: rgba(221,225,168,.96);
+    cursor: pointer;
+    display: block;
+    left: 0;
+    padding: 6px 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    .line{
+      -o-transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      background-color: white;
+      display: block;
+      height: 1px;
+      margin: 9px auto;
+      transition: all 0.3s ease-in-out;
+      width: 30px;
+    }
+  }
+  .page-push-nav {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -webkit-transition: all 0.5s;
+    background: white;
+    border-right: 1px solid black;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transform: translate3d(-100%, 0, 0);
+    transition: all 0.5s;
+    width: 300px;
+    z-index: 100;
+    ul {
+      padding: 60px 15px;
+      text-align: center;
+      text-transform: uppercase;
+      a {
+        color: black;
+        margin: 2em auto;
+        &:hover {
+          opacity: .6;
+        }
+      }
+    }
+    .page-push-nav-heading {
+      border-bottom: 1px solid black;
+      display: inline-block;
+      margin: 2em auto;
+      padding: 2em;
+    }
+  } 
+  .page-push-wrap {
+    -webkit-transition: -webkit-transform 0.5s;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  &.open {
+    .page-push-nav {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    } 
+    .page-push-wrap {
+      -webkit-transform: translate3d(300px, 0, 0);
+      transform: translate3d(300px, 0, 0);
+    }
+    .toggle-menu-btn .line {
+      &:nth-child(1) {
+        -webkit-transform: translateY(10px) rotate(45deg);
+        -ms-transform: translateY(10px) rotate(45deg);
+        -o-transform: translateY(10px) rotate(45deg);
+        transform: translateY(10px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        -webkit-transform: translateY(-10px) rotate(-45deg);
+        -ms-transform: translateY(-10px) rotate(-45deg);
+        -o-transform: translateY(-10px) rotate(-45deg);
+        transform: translateY(-10px) rotate(-45deg);
+      }
+    }
+  }
 }
 
