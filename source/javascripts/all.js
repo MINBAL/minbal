@@ -2,8 +2,9 @@
 
 var pushContainer = document.querySelector('main');
 var toggleButton = document.querySelector('.hamburger');
+var pagePushNav = document.querySelector('.page-push-nav');
 
-function deployMenu() {
+function toggleMenu() {
 
   if(pushContainer.classList.contains('open')) {
     pushContainer.classList.remove('open');
@@ -13,4 +14,5 @@ function deployMenu() {
   }
 }
 
-toggleButton.addEventListener('click', deployMenu);
+toggleButton.addEventListener('click', toggleMenu);
+pagePushNav.addEventListener('click', toggleMenu);
