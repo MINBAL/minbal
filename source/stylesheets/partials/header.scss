@@ -1,29 +1,28 @@
 @import "../mixins/flexbox";
 
 nav {
-	background: $white;
-	border-bottom: 1px solid $black;
+	background: transparent;
 	font-size: 14px;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	text-transform: uppercase;
 	width: 100%;
-	z-index: 1000;
+	z-index: 100;
 	.nav-innerwrap {
 		@include flexbox;
 		@include flex-direction(row);
 		@include align-items(center);
-		height: 75px;
+		@include justify-content(center);
 		margin: auto;
 		max-width: 1164px;
 		width: 95%;
 	}
 	.menu {
 		display: none;
-		margin-left: auto;
 		a {
-			color: $black;
+			color: white;
+			padding: 20px 0;
 		}
 		li {
 			font-family: $monospace;
@@ -33,7 +32,7 @@ nav {
 				margin: 0;
 			}
 			&:hover {
-				text-decoration: underline;
+				border-bottom: 1px solid white;
 			}
 		}
 	}

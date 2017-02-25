@@ -9,11 +9,24 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500|Source+Code+Pro" rel="stylesheet">
     <script src="https://use.fontawesome.com/f060f4ace6.js"></script>
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= partial "header" %>
-    <%= yield %>
+    <main class="">
+      <div class="hamburger" id="hamburger-2">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+      <div class="page-push-nav">
+        Push Nav
+      </div>
+      <div class="page-push-wrap">
+        <%= partial "header" %>
+        <%= yield %>
+      </div>
+    </main>
   </body>
+  <%= javascript_include_tag :all %>
 </html>
