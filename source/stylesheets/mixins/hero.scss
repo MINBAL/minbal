@@ -1,13 +1,16 @@
+@import 'aspect-ratio';
 @import 'vertical-center-flex';
 
 @mixin hero {
-	@include vertical-center-flex;
+	@include aspect-ratio(16,9,img);
   color: $white;
-	height: 100vh;
-	position: relative;
+  img {
+  	width: 100%;
+  	z-index: -1;
+  }
 	.continue-arrow {
 		bottom: 0;
-		font-size: 30px;
+		font-size: 2vw;
 		left: 0;
 		padding: 2em 0;
 		position: absolute;

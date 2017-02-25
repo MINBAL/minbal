@@ -8,7 +8,7 @@
 
 @mixin aspect-ratio($width, $height, $selector) {
   position: relative;
-  &:before {
+  &:after {
     display: block;
     content: "";
     width: 100%;

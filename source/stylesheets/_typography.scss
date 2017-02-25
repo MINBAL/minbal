@@ -1,4 +1,5 @@
 @import "colors";
+@import "mixins/vertical-center-flex";
 
 $sans-serif: 'Roboto', sans-serif;
 $monospace: 'Source Code Pro', monospace;
@@ -11,13 +12,17 @@ h4, h5 {
 }
 
 .h2 {
-	border: 5px solid rgba(221,225,168,.96);
+	@include vertical-center-flex;
+	bottom: 0;
 	font-size: 6vw;
 	font-weight: 500;
+	left: 0;
 	letter-spacing: 5px;
-	padding: 20px;
+	position: absolute;
+	right: 0;
 	text-align: center;
 	text-transform: uppercase;
+	top: 0;
 }
 
 .h3 {

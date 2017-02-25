@@ -6,14 +6,9 @@
 
 .hero {
 	@include hero;
+	border: 5px solid rgba(221,225,168,.96);
 	color: rgba(221,225,168,.96);
-	img {
-		top: 0;
-		left: 0;
-		position: absolute;
-		width: 100%;
-		z-index: -1;
-	}
+	overflow: hidden;
 }
 
 .content-container {
@@ -108,9 +103,6 @@
 @media (min-width: $screen-lg) {
 	body.studio:before {
 	  height: 100vh;
-	}
-	.hero {
-		margin-bottom: 8em;
 	}
 	.projects {
 		.projects-list {
