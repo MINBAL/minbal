@@ -15,4 +15,4 @@ function toggleMenu() {
 
 toggleMenuButton.addEventListener('click', toggleMenu);
 
-//pagePushNav.addEventListener('click', toggleMenu);
+pagePushNav.addEventListener('click', toggleMenu);
