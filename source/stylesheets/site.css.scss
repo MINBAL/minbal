@@ -101,7 +101,7 @@ main {
       text-transform: uppercase;
       a {
         color: black;
-        margin: 2em auto;
+        padding: 2em;
         &:hover {
           opacity: .6;
         }
@@ -111,12 +111,13 @@ main {
       border-bottom: 1px solid rgba(black, 0.1);
       border-top: 1px solid rgba(black, 0.1);
       display: inline-block;
-      padding: 1em;
-      &:first-of-type {
+      &:first-of-type,
+      &:last-of-type {
         border-top: 0;
       }
     }
   } 
+
   .page-push-wrap {
     -webkit-transition: -webkit-transform 0.5s;
     height: 100%;
