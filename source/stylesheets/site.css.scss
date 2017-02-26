@@ -28,7 +28,19 @@ body {
   color: $black;
   font-family: $sans-serif; 
   &.studio {
-    color: $black;
+    .studio-link {
+      border-bottom: 1px solid white;
+    }
+  }
+  &.licensing {
+    .licensing-link {
+      border-bottom: 1px solid white;
+    }
+  }
+  &.composition {
+    .composition-link {
+      border-bottom: 1px solid white;
+    }
   }
 }
 
@@ -71,8 +83,8 @@ main {
   .page-push-nav {
     -webkit-transform: translate3d(-100%, 0, 0);
     -webkit-transition: all 0.5s;
-    background: white;
-    border-right: 1px solid rgba(black, 0.1);
+    background: rgba(221,225,168,.96);
+    color: black;
     height: 100%;
     left: 0;
     position: fixed;
@@ -82,7 +94,9 @@ main {
     width: 300px;
     z-index: 100;
     ul {
-      padding: 60px 15px;
+      @include flexbox;
+      @include flex-direction(column);
+      margin: 50px 0;
       text-align: center;
       text-transform: uppercase;
       a {
@@ -94,10 +108,13 @@ main {
       }
     }
     .page-push-nav-heading {
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid rgba(black, 0.1);
+      border-top: 1px solid rgba(black, 0.1);
       display: inline-block;
-      margin: 2em auto;
-      padding: 2em;
+      padding: 1em;
+      &:first-of-type {
+        border-top: 0;
+      }
     }
   } 
   .page-push-wrap {
