@@ -1,6 +1,7 @@
 @import "colors";
 @import "mixins/vertical-center-flex";
 
+$serif: 'Merriweather', serif;
 $sans-serif: 'Roboto', sans-serif;
 $monospace: 'Source Code Pro', monospace;
 
@@ -28,8 +29,7 @@ h4, h5 {
 
 .h3 {
 	display: inline-block;
-	font-family: $monospace;
-	font-weight: bold;
-	letter-spacing: 3px;
+	font-family: $serif;
+	font-weight: 900;
 	text-transform: uppercase;
 }

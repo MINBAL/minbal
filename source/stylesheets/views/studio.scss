@@ -73,9 +73,9 @@
 		}
 	}
 	.h3 {
-		font-size: 1.35em;
+		font-size: 2em;
+		line-height: 1.6em;
 		padding-bottom: 1em;
-		text-align: center;
 		width: 100%;
 	}
 	aside {
@@ -143,6 +143,7 @@
 		.h3 {
 			border: 0;
 			margin-bottom: 0;
+			min-width: 220px;
 			padding-bottom: 0;
 			text-align: left;
 			width: 20%;
