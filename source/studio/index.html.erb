@@ -83,26 +83,33 @@ title: STUDIO - MINBAL
 	<div class="content-container-body">
 		<h3 class="h3">PROJECTS</h3>
 		<div class="inner projects">
-		<input type="checkbox" name="panel" id="panel_1_d1" />
-		<label class="label" for="panel_1_d1">Artists</label>
-		<ul class="projects-list collapsible">
-		  <% data.projects.artists.each do |f| %>
-		  	<li><%= f %></li>
-		  <% end %>
-		</ul>
-		<input type="checkbox" name="panel" id="panel_2_d1" />
-		<label class="label" for="panel_2_d1">Labels</label>
-		<ul class="projects-list collapsible">
-		  <% data.projects.labels.each do |f| %>
-		  	<li><%= f %></li>
-		  <% end %>
-		</ul>
-		<input type="checkbox" name="panel" id="panel_3_d1" />
-		<label class="label" for="panel_3_d1">Film</label>
-		<ul class="projects-list collapsible">
-		  <% data.projects.film.each do |f| %>
-		  	<li><%= f %></li>
-		  <% end %>
-		</ul>
+			<div>
+				<input type="checkbox" name="panel" id="panel_1_d1" />
+				<label class="label" for="panel_1_d1">Artists</label>
+				<ul class="projects-list collapsible">
+				  <% data.projects.artists.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_2_d1" />
+				<label class="label" for="panel_2_d1">Labels</label>
+				<ul class="projects-list collapsible">
+				  <% data.projects.labels.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_3_d1" />
+				<label class="label" for="panel_3_d1">Film</label>
+				<ul class="projects-list collapsible">
+				  <% data.projects.film.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+		</div>
 	</div>
 </section>
