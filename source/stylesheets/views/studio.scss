@@ -3,6 +3,7 @@
 @import "../mixins/ease";
 @import "../mixins/hero";
 @import "../mixins/vertical-center-flex";
+@import "../helpers/accordion";
 
 .hero {
 	@include hero;
@@ -34,7 +35,7 @@
 }
 
 .projects {
-	h3 {
+	label {
 		border-bottom: 1px solid rgba(221,225,168,.96);
 		font-size: .75em;
 		margin-bottom: 1em;
