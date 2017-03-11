@@ -34,7 +34,7 @@
 	}
 }
 
-.projects {
+.studio-list-container {
 	label {
 		border-bottom: 1px solid rgba(221,225,168,.96);
 		font-size: .75em;
@@ -43,15 +43,16 @@
 		text-transform: uppercase;
 		width: 100%;
 	}
-	.projects-list {
+	.studio-list-container-list {
 		@include flexbox;
 		@include flex-flow(row wrap);
-		@include justify-content(space-between);
-		font-size: 14px;
+		@include justify-content(flex-start);
+		font-size: 12px;
 		margin-bottom: 2em;
 		width: 100%;
 		li {
 			margin-bottom: .5em;
+			padding-right: 2%;
 			width: 48%;
 		}
 	}
@@ -102,11 +103,8 @@
 }
 
 @media (min-width: $screen-lg) {
-	body.studio:before {
-	  height: 100vh;
-	}
-	.projects {
-		.projects-list {
+	.studio-list-container {
+		.studio-list-container-list {
 			li {
 				width: 32%;
 			}
@@ -136,7 +134,7 @@
 		.inner {
 			margin-right: 4em;
 			width: 60%;
-			&.projects {
+			&.studio-list-container {
 				width: 80%;
 			}
 		}

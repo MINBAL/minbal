@@ -2,7 +2,7 @@
 title: STUDIO - MINBAL
 ---
 
-<section class="hero" id="about">
+<section class="hero">
 	<h2 class="h2">Studio</h2>
 	<img src="https://s3.amazonaws.com/minbal/studio/console.jpg" alt=""/>
 	<span class="continue-arrow">
@@ -10,7 +10,7 @@ title: STUDIO - MINBAL
 	</span>
 </section>
 
-<section class="content-container minbal">
+<section class="content-container minbal" id="about">
 	<div class="content-container-body">
 		<h3 class="h3">MINBAL</h3>
 		<div class="inner">
@@ -42,14 +42,14 @@ title: STUDIO - MINBAL
 	</div>
 </section>
 
-<section class="hero" id="booking">
+<section class="hero">
 	<img src="https://s3.amazonaws.com/minbal/studio/console.jpg" alt=""/>
 	<span class="continue-arrow">
 		<i class="fa fa-chevron-down"></i>
 	</span>
 </section>
 
-<section class="content-container booking">
+<section class="content-container booking" id="booking">
 	<div class="content-container-body">
 		<h3 class="h3">BOOKING</h3>
 		<div class="inner">
@@ -72,56 +72,21 @@ title: STUDIO - MINBAL
 	</div>
 </section>
 
-<section class="hero" id="projects">
+<section class="hero">
 	<img src="https://s3.amazonaws.com/minbal/studio/console.jpg" alt=""/>
 	<span class="continue-arrow">
 		<i class="fa fa-chevron-down"></i>
 	</span>
 </section>
 
-<section class="content-container">
-	<div class="content-container-body">
-		<h3 class="h3">PROJECTS</h3>
-		<div class="inner projects">
-			<div>
-				<input type="checkbox" name="panel" id="panel_1_d1" />
-				<label class="label" for="panel_1_d1">Artists</label>
-				<ul class="projects-list collapsible">
-				  <% data.projects.artists.each do |f| %>
-				  	<li><%= f %></li>
-				  <% end %>
-				</ul>
-			</div>
-			<div>
-				<input type="checkbox" name="panel" id="panel_2_d1" />
-				<label class="label" for="panel_2_d1">Labels</label>
-				<ul class="projects-list collapsible">
-				  <% data.projects.labels.each do |f| %>
-				  	<li><%= f %></li>
-				  <% end %>
-				</ul>
-			</div>
-			<div>
-				<input type="checkbox" name="panel" id="panel_3_d1" />
-				<label class="label" for="panel_3_d1">Film</label>
-				<ul class="projects-list collapsible">
-				  <% data.projects.film.each do |f| %>
-				  	<li><%= f %></li>
-				  <% end %>
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="content-container">
+<section class="content-container" id="gear">
 	<div class="content-container-body">
 		<h3 class="h3">GEAR</h3>
-		<div class="inner projects">
+		<div class="inner studio-list-container">
 			<div>
 				<input type="checkbox" name="panel" id="panel_4_d1" />
 				<label class="label" for="panel_4_d1">Mixing</label>
-				<ul class="projects-list collapsible">
+				<ul class="studio-list-container-list collapsible">
 				  <% data.gear.mixing.each do |f| %>
 				  	<li><%= f %></li>
 				  <% end %>
@@ -130,7 +95,7 @@ title: STUDIO - MINBAL
 			<div>
 				<input type="checkbox" name="panel" id="panel_5_d1" />
 				<label class="label" for="panel_5_d1">Monitoring</label>
-				<ul class="projects-list collapsible">
+				<ul class="studio-list-container-list collapsible">
 				  <% data.gear.monitoring.each do |f| %>
 				  	<li><%= f %></li>
 				  <% end %>
@@ -139,7 +104,7 @@ title: STUDIO - MINBAL
 			<div>
 				<input type="checkbox" name="panel" id="panel_6_d1" />
 				<label class="label" for="panel_6_d1">Software</label>
-				<ul class="projects-list collapsible">
+				<ul class="studio-list-container-list collapsible">
 				  <% data.gear.software.each do |f| %>
 				  	<li><%= f %></li>
 				  <% end %>
@@ -148,7 +113,7 @@ title: STUDIO - MINBAL
 			<div>
 				<input type="checkbox" name="panel" id="panel_7_d1" />
 				<label class="label" for="panel_7_d1">Recorders</label>
-				<ul class="projects-list collapsible">
+				<ul class="studio-list-container-list collapsible">
 				  <% data.gear.recorders.each do |f| %>
 				  	<li><%= f %></li>
 				  <% end %>
@@ -157,8 +122,52 @@ title: STUDIO - MINBAL
 			<div>
 				<input type="checkbox" name="panel" id="panel_8_d1" />
 				<label class="label" for="panel_8_d1">Conversions/Sync</label>
-				<ul class="projects-list collapsible">
+				<ul class="studio-list-container-list collapsible">
 				  <% data.gear.conversions.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_9_d1" />
+				<label class="label" for="panel_9_d1">Conversions/Sync</label>
+				<ul class="studio-list-container-list collapsible">
+				  <% data.gear.signal.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="content-container" id="clients">
+	<div class="content-container-body">
+		<h3 class="h3">CLIENTS</h3>
+		<div class="inner studio-list-container">
+			<div>
+				<input type="checkbox" name="panel" id="panel_1_d1" />
+				<label class="label" for="panel_1_d1">Artists</label>
+				<ul class="studio-list-container-list collapsible">
+				  <% data.clients.artists.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_2_d1" />
+				<label class="label" for="panel_2_d1">Labels</label>
+				<ul class="studio-list-container-list collapsible">
+				  <% data.clients.labels.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_3_d1" />
+				<label class="label" for="panel_3_d1">Film</label>
+				<ul class="studio-list-container-list collapsible">
+				  <% data.clients.film.each do |f| %>
 				  	<li><%= f %></li>
 				  <% end %>
 				</ul>

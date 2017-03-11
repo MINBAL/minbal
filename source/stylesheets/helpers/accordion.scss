@@ -29,7 +29,7 @@ input[name='panel'] {
       right: 5px;
       top: 0px;
       transform: rotate(90deg);
-      transition: .3s transform;
+      transition: .2s transform;
     }
   }
   .collapsible {
@@ -37,13 +37,12 @@ input[name='panel'] {
     width: 100%;
   }
   input[name='panel'] ~ .collapsible {
-    @include ease(all, 400ms);
     overflow: hidden;
-    max-height: 0;
+    height: 0;
     transform: rotate(0deg);
   }
   input[name='panel']:checked ~ .collapsible {
-    max-height: 2000px; /* needs a numeric value here to keep transition */
+    height: auto; /* needs a numeric value here to keep transition */
   }
   input[name='panel']:checked ~ label:after {
     transform: rotate(0deg);

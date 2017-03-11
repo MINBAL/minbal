@@ -1,11 +1,12 @@
 {
   "mixing": [
-		"Quad Eight Ventura 28x8x28 w AM10 master section mod"
+		"Quad Eight Ventura 28x8x28 w\/ AM10 master section mod"
   ],
   "monitoring": [
 		"Barefoot Sound MM27s",
 		"Avantone Mixcubes",
-		"Sennheiser MD280 and AKG K240 headphones",
+		"Sennheiser MD280 headphones",
+		"KG K240 headphones",
 		"Furman HDS-6 distribution",
 		"Furman HDS headphone mixers"
   ],
@@ -22,5 +23,26 @@
 		"24 i/o of Apogee 192kHz",
 		"Black Lion MicroClock MK3",
 		"MOTU Midi Timpiece"
+  ],
+  "signal": [
+		"Shadow Hills Mastering Compressor",
+		"Empircal Labs Distressor EL8X-S - BRIT MOD (2)",
+		"Federal AM-864 (modded by Retro)",
+		"Universal Audio LA2A",
+		"Quad Eight CL22 Compressors (4)",
+		"DBX 160A (2)",
+		"DBX 117",
+		"DBX 118",
+		"DBX 119",
+		"SPL Transient Designer",
+		"Tube Tech PE1C EQ (2)",
+		"Bricasti M7 Digital Reverb",
+		"EMT 140 Plate Reverb(tube, mono)",
+		"Echoplate III Plate Reverb",
+		"Pioneer Spring Reverb",
+		"Acetone Spring Reverb",
+		"WEM Copicat",
+		"DBX 120A",
+		"Audio processing by Fabfilter, SoundToys, Izotope, Softube, Massey, Cranesong, etc."
   ]
-} 	
+}
