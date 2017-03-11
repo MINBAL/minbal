@@ -113,3 +113,56 @@ title: STUDIO - MINBAL
 		</div>
 	</div>
 </section>
+
+<section class="content-container">
+	<div class="content-container-body">
+		<h3 class="h3">GEAR</h3>
+		<div class="inner projects">
+			<div>
+				<input type="checkbox" name="panel" id="panel_4_d1" />
+				<label class="label" for="panel_4_d1">Mixing</label>
+				<ul class="projects-list collapsible">
+				  <% data.gear.mixing.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_5_d1" />
+				<label class="label" for="panel_5_d1">Monitoring</label>
+				<ul class="projects-list collapsible">
+				  <% data.gear.monitoring.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_6_d1" />
+				<label class="label" for="panel_6_d1">Software</label>
+				<ul class="projects-list collapsible">
+				  <% data.gear.software.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_7_d1" />
+				<label class="label" for="panel_7_d1">Recorders</label>
+				<ul class="projects-list collapsible">
+				  <% data.gear.recorders.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_8_d1" />
+				<label class="label" for="panel_8_d1">Conversions/Sync</label>
+				<ul class="projects-list collapsible">
+				  <% data.gear.conversions.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
