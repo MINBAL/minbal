@@ -1,0 +1,24 @@
+@import "../mixins/flexbox";
+
+footer {
+	background: transparent;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	width: 100%;
+	.footer-innerwrap {
+		@include flexbox;
+		@include flex-direction(row);
+		@include align-items(center);
+		@include justify-content(center);
+		margin: 3em auto;
+		max-width: 1164px;
+		width: 95%;
+		a {
+			color: black;
+			margin: 0 1em;
+			&:hover {
+				opacity: .6;
+			}
+		}
+	}
+}

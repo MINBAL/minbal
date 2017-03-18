@@ -130,6 +130,33 @@ title: STUDIO - MINBAL
 				  <% end %>
 				</ul>
 			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_10_d1" />
+				<label class="label" for="panel_10_d1">Microphones Preamps</label>
+				<ul class="studio-list-container-list collapsible">
+				  <% data.gear.preamps.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_11_d1" />
+				<label class="label" for="panel_11_d1">Microphones Direct</label>
+				<ul class="studio-list-container-list collapsible">
+				  <% data.gear.microphones.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
+			<div>
+				<input type="checkbox" name="panel" id="panel_12_d1" />
+				<label class="label" for="panel_12_d1">Instruments/Amplifiers</label>
+				<ul class="studio-list-container-list collapsible">
+				  <% data.gear.instruments.each do |f| %>
+				  	<li><%= f %></li>
+				  <% end %>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>
