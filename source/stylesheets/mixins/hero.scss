@@ -2,7 +2,7 @@
 @import 'vertical-center-flex';
 
 @mixin hero {
-	@include aspect-ratio(16,9,img);
+	@include aspect-ratio(16,9,picture);
   color: $white;
   img {
   	width: 100%;
