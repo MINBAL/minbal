@@ -1,6 +1,4 @@
-# MINBAL 
-
-## Middleman powered site for [`Minbal`](http://minbal.com/)
+# FMG INTERACTIVE DEMO 
 
 ### Install
 
@@ -15,5 +13,3 @@
 ### Deploy to gh-pages
 
   1. Run `middleman build && middleman deploy`
-
-          go to https://minbal.github.io/minbal 
