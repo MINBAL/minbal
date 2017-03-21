@@ -1,5 +1,3 @@
-# FMG INTERACTIVE DEMO 
-
 ### Install
 
   1. Install [`Middleman`](https://middlemanapp.com/basics/install/)
