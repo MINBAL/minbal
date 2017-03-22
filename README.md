@@ -1,10 +1,8 @@
 ### Install
 
-  1. Install [`Middleman`](https://middlemanapp.com/basics/install/)
+  1. Run `bundle install` to make sure all the things are there
 
-  2. Run `bundle install` to make sure all the things are there
-
-  3. Run `middleman server` to develop 
+  2. Run `middleman server` to develop 
 
           go to http://localhost:4567
 
