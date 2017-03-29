@@ -1,0 +1,14 @@
+@import "../mixins/aspect-ratio";
+@import "../mixins/flexbox";
+
+.licensing {
+	iframe {
+		height: 100vh;
+	}
+	.toggle-menu-btn {
+		display: none;
+	}
+	.fa-bars {
+		color: orange;
+	}
+}

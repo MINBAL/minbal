@@ -12,7 +12,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 page "/studio/*", :layout => "layout"
-page "/licensing/*", :layout => "layout"
+page "/licensing/*", :layout => "licensing-layout"
 page "/composition/*", :layout => "layout"
 
 # With alternative layout
