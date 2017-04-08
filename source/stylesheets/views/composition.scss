@@ -1,0 +1,72 @@
+@import "../mixins/aspect-ratio";
+@import "../mixins/flexbox";
+@import "../mixins/flex-grid";
+
+body.composition {
+	iframe {
+		height: 100%;
+		width: 100%;
+	}
+	.videos {
+		margin: auto;
+		max-width: 1200px;
+		padding: 10px;
+		width: 100%;
+	}
+}
+
+.three-video-grid {
+  @include flexgrid(
+    $columns: 1,
+    $gutter: 10
+  );
+	li {
+		@include aspect-ratio(16,9,iframe);
+		margin-bottom: 10px;
+	}
+}
+
+.hero-video {
+	@include aspect-ratio(16,9,iframe);
+	margin: 10px 0;
+}
+
+.four-video-grid {
+  @include flexgrid(
+    $columns: 1,
+    $gutter: 10
+  );
+	li {
+		@include aspect-ratio(16,9,iframe);
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: $screen-lg) {
+	body.composition {
+		.videos {
+			padding: 20px;
+		}
+	}
+	.three-video-grid {
+	  @include flexgrid(
+	    $columns: 3,
+	    $gutter: 20
+	  );
+	  li {
+	  	margin-bottom: 0;
+	  }
+	}
+	.hero-video {
+		margin: 20px 0;
+	}
+	.four-video-grid {
+	  @include flexgrid(
+	    $columns: 4,
+	    $gutter: 20
+	  );
+	  li {
+	  	margin-bottom: 0;
+	  }
+	}
+}
