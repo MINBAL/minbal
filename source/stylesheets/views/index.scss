@@ -1,0 +1,13 @@
+@import "../mixins/flexbox";
+
+body.index {
+	nav {
+		@include flexbox;
+		@include align-items(center);
+		height: 100%;
+		width: 100%;
+	}
+	footer {
+		display: none;
+	}
+}
