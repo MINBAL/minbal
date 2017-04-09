@@ -28,7 +28,7 @@ body.composition {
 
 .hero-video {
 	@include aspect-ratio(16,9,iframe);
-	margin: 10px 0;
+	margin-bottom: 10px;
 }
 
 .four-video-grid {
