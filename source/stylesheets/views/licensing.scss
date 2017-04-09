@@ -5,10 +5,21 @@
 	iframe {
 		height: 100vh;
 	}
-	.toggle-menu-btn {
-		display: none;
-	}
-	.fa-bars {
-		color: orange;
+	.licensing-cta {
+		@include flexbox;
+		a {
+			border: 1px solid black;
+			border-radius: 999em;
+			color: black;
+			display: inline-block;
+			margin: 40px auto;
+			opacity: 1;
+			padding: 20px;
+			text-align: center;
+			&:hover {
+				opacity: .6;
+			}
+		}
 	}
 }
+
