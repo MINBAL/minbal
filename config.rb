@@ -11,7 +11,6 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-page "/", :layout => "index-layout"
 page "/studio/*", :layout => "layout"
 page "/licensing/*", :layout => "licensing-layout"
 page "/composition/*", :layout => "layout"
