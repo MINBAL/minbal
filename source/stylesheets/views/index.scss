@@ -1,14 +1,18 @@
 @import "../mixins/flexbox";
 
-body.index {
-	background: url(https://s3.amazonaws.com/minbal/main/optimized/main_bw_mobile.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+.index {
+	background: black;
+	header,
+	footer, {
+		display: none;
+		visibility: hidden;
+	}
+	.page-push-wrap {
+		height: 100vh;
+	}
 }
 
-.landing-menu {
+.landing-menu-wrap {
 	@include flexbox;
 	@include flex-direction(column);
 	@include align-items(center);
@@ -19,6 +23,16 @@ body.index {
 	top: 0;
 	width: 100%;
 	z-index: 100;
+}
+
+.landing-menu {
+	@include flexbox;
+	@include flex-direction(column);
+	@include align-items(center);
+	@include justify-content(center);
+	h1 {
+		width: 100%;
+	}
 	li {
 		font-size: 16px;
 		margin: 20px;
@@ -36,5 +50,10 @@ body.index {
 @media (min-width: $screen-lg) {
 	.landing-menu {
 		@include flex-direction(row);
+	}
+	.index {
+		.page-push-wrap {
+			height: auto;
+		}
 	}
 }
