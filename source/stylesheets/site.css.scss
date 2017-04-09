@@ -32,20 +32,32 @@ body {
   background: $white;
   color: $black;
   font-family: $futura; 
+  &.index {
+    .hero {
+      color: rgba(138,255,222,.8);    
+    }   
+  }
   &.studio {
     .studio-link {
       border-bottom: 1px solid white;
     }
+    .hero {
+      //background-image: linear-gradient(to right,#c7af80,#ba5f46);
+      color: rgba(251,255,189,.62);   
+    }   
   }
-  &.licensing {
+  &.licsensing {
     .licensing-link {
       border-bottom: 1px solid white;
-    }
+    }   
   }
   &.composition {
     .composition-link {
       border-bottom: 1px solid white;
     }
+    .hero {
+      color: rgba(251,255,189,.62);   
+    } 
   }
 }
 
