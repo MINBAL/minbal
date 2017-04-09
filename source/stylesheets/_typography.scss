@@ -4,10 +4,11 @@
 $serif: 'Merriweather', serif;
 $sans-serif: 'Roboto', sans-serif;
 $monospace: 'Source Code Pro', monospace;
+$futura: "futura-pt",sans-serif;
 
 h1, h2, h3,
 h4, h5 {
-	font-family: $monospace;
+	font-family: $futura;
 	margin: 0;
 	padding: 0;
 }
@@ -29,7 +30,7 @@ h4, h5 {
 
 .h3 {
 	display: inline-block;
-	font-family: $serif;
+	font-family: $futura;
 	font-weight: 900;
 	text-transform: uppercase;
 }
