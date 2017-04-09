@@ -1,13 +1,40 @@
 @import "../mixins/flexbox";
 
 body.index {
-	nav {
-		@include flexbox;
-		@include align-items(center);
-		height: 100%;
-		width: 100%;
+	background: url(https://s3.amazonaws.com/minbal/main/optimized/main_bw_mobile.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.landing-menu {
+	@include flexbox;
+	@include flex-direction(column);
+	@include align-items(center);
+	@include justify-content(center);
+	height: 100vh;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	li {
+		font-size: 16px;
+		margin: 20px;
 	}
-	footer {
-		display: none;
+	a {
+		color: white;
+		display: block;
+		text-transform: uppercase;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@media (min-width: $screen-lg) {
+	.landing-menu {
+		@include flex-direction(row);
 	}
 }

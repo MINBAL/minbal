@@ -9,18 +9,23 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500|Source+Code+Pro|Merriweather:700,900" rel="stylesheet">
     <script src="https://use.fontawesome.com/f060f4ace6.js"></script>
     <%= stylesheet_link_tag :site %>
-    <script>
-      // Picture element HTML5 shiv
-      document.createElement( "picture" );
-    </script>
-    <%= javascript_include_tag "picturefill.min.js" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <main class="">
-      <div class="page-push-wrap">
-        <%= yield %>
-      </div>
-    </main>
+    <section>
+      <ul class="landing-menu">
+        <li class="studio-link">
+          <%= link_to 'Studio', "#{config[:site_url]}/studio" %>
+        </li>
+        <li class="licensing-link">
+          <%= link_to 'Licensing', "#{config[:site_url]}/licensing" %>
+        </li>
+        <li class="composition-link">
+          <%=link_to "Composition", "#{config[:site_url]}/composition" %>
+        </li>
+      </ul>
+    </section>
   </body>
+  <%= javascript_include_tag "lazyload.min.js" %>
+  <%= javascript_include_tag :all %>
 </html>
