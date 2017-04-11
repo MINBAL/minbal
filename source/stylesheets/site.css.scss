@@ -28,6 +28,14 @@ html {
   font-size: 15px;
 }
 
+.fullscreen-bg {
+  picture {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
 body {
   background: $white;
   color: $black;
@@ -37,31 +45,50 @@ body {
       color: rgba(138,255,222,.8);  
       font-weight: 400;
       font-style: normal; 
-      font-size: 9vw;
+      font-size: 10vw;
       letter-spacing: .3em;
       text-transform: uppercase;
-    }   
+    }
+    .hero{
+      &.primary {
+        background-color:  hsla(69, 0%, 56%, 0.11);
+        color: hsla(147, 91%, 78%, 0.8);
+      }
+    }  
   }
   &.studio {
     .studio-link {
       border-bottom: 1px solid white;
     }
-    .hero {
-      //background-image: linear-gradient(to right,#c7af80,#ba5f46);
-      color: rgba(251,255,189,.62);   
-    }   
+    .hero{
+      &.primary {
+        background-color: hsla(58, 85%, 16%, 0.23);
+        color: hsla(66, 82%, 82%, 0.75);
+      }
+      &.control-room {
+        background-color: hsla(60, 57%, 10%, 0.41);
+      }
+      &.console {
+        background-color: hsla(60, 57%, 7%, 0.57);
+      }
+    } 
   }
   &.licensing {
     .licensing-link {
       border-bottom: 1px solid white;
-    }   
+    }
+    .hero {
+      background-color: hsla(190, 56%, 16%, 0.26);
+      color: hsla(168, 84%, 60%, 0.8);
+    } 
   }
   &.composition {
     .composition-link {
       border-bottom: 1px solid white;
     }
     .hero {
-      color: rgba(251,255,189,.62);   
+      background-color:  hsla(205, 54%, 11%, 0.79);
+      color: hsla(194, 100%, 64%, 0.85);   
     } 
   }
 }

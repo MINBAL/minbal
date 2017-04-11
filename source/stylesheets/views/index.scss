@@ -2,55 +2,38 @@
 
 .index {
 	background: black;
-	header,
-	footer, {
+	footer {
 		display: none;
-		visibility: hidden;
+		visibility: hidden;	
 	}
 	.page-push-wrap {
 		height: 100vh;
 	}
 }
 
-.landing-menu-wrap {
+.landing-copy-wrap {
 	@include flexbox;
 	@include flex-direction(column);
 	@include align-items(center);
 	@include justify-content(center);
 	height: 100vh;
-	left: 0;
-	position: absolute;
-	top: 0;
+	letter-spacing: .3em;
+	position: relative;
+	text-align: center;
 	width: 100%;
-	z-index: 100;
 }
 
-.landing-menu {
+.landing-copy {
 	@include flexbox;
 	@include flex-direction(column);
 	@include align-items(center);
 	@include justify-content(center);
-	h1 {
-		width: 100%;
-	}
-	li {
-		font-size: 16px;
-		margin: 20px;
-	}
-	a {
-		color: white;
-		display: block;
-		text-transform: uppercase;
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+	font-size: 20px;
+	color: hsla(67, 14%, 73%, 0.79);
+	margin: 20px auto;
 }
 
 @media (min-width: $screen-lg) {
-	.landing-menu {
-		@include flex-direction(row);
-	}
 	.index {
 		.page-push-wrap {
 			height: auto;

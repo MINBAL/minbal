@@ -12,7 +12,7 @@
 			border-radius: 999em;
 			color: black;
 			display: inline-block;
-			margin: 40px auto;
+			margin: auto;
 			opacity: 1;
 			padding: 20px;
 			text-align: center;
@@ -20,6 +20,10 @@
 				opacity: .6;
 			}
 		}
+	}
+	aside {
+		border: 0;
+		padding-top: 0;
 	}
 }
 
