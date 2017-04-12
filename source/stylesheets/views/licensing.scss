@@ -2,12 +2,6 @@
 @import "../mixins/flexbox";
 
 .licensing {
-	iframe {
-		height: 100vh;
-	}
-	footer {
-		display: none;
-	}
 	.licensing-cta {
 		@include flexbox;
 		a {
