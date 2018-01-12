@@ -15,7 +15,12 @@ body.composition {
 	}
 }
 
-.three-video-grid {
+.hero-video {
+	@include aspect-ratio(16,9,iframe);
+	margin-bottom: 10px;
+}
+
+.two-video-grid {
   @include flexgrid(
     $columns: 1,
     $gutter: 10
@@ -26,9 +31,15 @@ body.composition {
 	}
 }
 
-.hero-video {
-	@include aspect-ratio(16,9,iframe);
-	margin-bottom: 10px;
+.three-video-grid {
+  @include flexgrid(
+    $columns: 1,
+    $gutter: 10
+  );
+	li {
+		@include aspect-ratio(16,9,iframe);
+		margin-bottom: 10px;
+	}
 }
 
 .four-video-grid {
@@ -48,17 +59,26 @@ body.composition {
 			padding: 20px;
 		}
 	}
+	.hero-video {
+		margin-bottom: 20px;
+	}
+	.two-video-grid {
+	  @include flexgrid(
+	    $columns: 2,
+	    $gutter: 20
+	  );
+	  li {
+	  	margin-bottom: 20px;
+	  }
+	}
 	.three-video-grid {
 	  @include flexgrid(
 	    $columns: 3,
 	    $gutter: 20
 	  );
 	  li {
-	  	margin-bottom: 0;
+	  	margin-bottom: 20px;
 	  }
-	}
-	.hero-video {
-		margin: 20px 0;
 	}
 	.four-video-grid {
 	  @include flexgrid(
@@ -66,7 +86,7 @@ body.composition {
 	    $gutter: 20
 	  );
 	  li {
-	  	margin-bottom: 0;
+	  	margin-bottom: 20px;
 	  }
 	}
 }
