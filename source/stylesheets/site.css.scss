@@ -7,14 +7,13 @@
 
 @import "mixins/ease";
 @import "mixins/flexbox";
+@import "mixins/hero";
 @import "mixins/vertical-center-flex";
 
 @import "partials/footer";
-@import "partials/header";
 
 @import "views/index";
-@import "views/policy";
-@import "views/studio";
+@import "views/old_layout";
 @import "views/composition";
 @import "views/licensing";
 
@@ -55,23 +54,6 @@ body {
         color: hsla(147, 91%, 78%, 0.8);
       }
     }  
-  }
-  &.studio {
-    .studio-link {
-      border-bottom: 1px solid white;
-    }
-    .hero{
-      &.primary {
-        background-color: hsla(58, 85%, 16%, 0.23);
-        color: hsla(66, 82%, 82%, 0.75);
-      }
-      &.control-room {
-        background-color: hsla(60, 57%, 10%, 0.41);
-      }
-      &.console {
-        background-color: hsla(60, 57%, 7%, 0.57);
-      }
-    } 
   }
   &.licensing {
     .licensing-link {

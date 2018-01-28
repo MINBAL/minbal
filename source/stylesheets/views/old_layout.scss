@@ -3,7 +3,6 @@
 @import "../mixins/ease";
 @import "../mixins/hero";
 @import "../mixins/vertical-center-flex";
-@import "../helpers/accordion";
 
 .hero {
 	@include hero;
@@ -28,45 +27,7 @@
 	padding: 4em 0;
 	position: relative;
 	width: 100%;
-	&.booking {
-		aside {
-			font-size: 12px;
-			font-weight: bold;
-			order: 2;
-		}
-		.h3 {
-			order: 1;
-		}
-		.inner {
-			order: 3;
-		}
-	}
 }
-
-.studio-list-container {
-	label {
-		border-bottom: 1px solid #f7f7f7;
-		font-size: .75em;
-		margin-bottom: 1em;
-		padding-bottom: 1em;
-		text-transform: uppercase;
-		width: 100%;
-	}
-	.studio-list-container-list {
-		@include flexbox;
-		@include flex-flow(row wrap);
-		@include justify-content(flex-start);
-		font-size: 13px;
-		margin-bottom: 2em;
-		width: 100%;
-		li {
-			margin-bottom: .5em;
-			padding-right: 2%;
-			width: 48%;
-		}
-	}
-}
-
 
 .content-container-body {
 	@include flexbox;
@@ -111,29 +72,6 @@
 }
 
 @media (min-width: $screen-lg) {
-	.studio-list-container {
-		.studio-list-container-list {
-			li {
-				width: 32%;
-			}
-		}
-	}
-	.content-container {
-		@include flex-direction(row);
-		@include flex-wrap(wrap);
-		padding: 8em 0;
-		&.booking {
-			aside {
-				order: initial;
-			}
-			.h3 {
-				order: initial;
-			}
-			.inner {
-				order: initial;
-			}
-		}
-	}
 	.content-container-body {
 		@include flex-direction(row);
 		margin: auto;
@@ -142,9 +80,6 @@
 		.inner {
 			margin-right: 4em;
 			width: 60%;
-			&.studio-list-container {
-				width: 80%;
-			}
 		}
 		.h3 {
 			border: 0;
