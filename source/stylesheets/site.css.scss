@@ -12,7 +12,6 @@
 
 @import "partials/footer";
 
-@import "views/index";
 @import "views/old_layout";
 @import "views/composition";
 @import "views/licensing";
@@ -31,22 +30,6 @@ body {
   background: $white;
   color: $black;
   font-family: $futura; 
-  &.index {
-    h1 {
-      color: rgba(138,255,222,.8);  
-      font-weight: 400;
-      font-style: normal; 
-      font-size: 10vw;
-      letter-spacing: .3em;
-      text-transform: uppercase;
-    }
-    .hero{
-      &.primary {
-        background-color:  hsla(69, 0%, 56%, 0.11);
-        color: hsla(147, 91%, 78%, 0.8);
-      }
-    }  
-  }
   &.licensing {
     .licensing-link {
       border-bottom: 1px solid white;
@@ -81,15 +64,30 @@ ul {
 main {
   overflow-x: hidden;
   position: relative;
-  .toggle-menu-btn {
-    background: rgba(255,255,255,.6);
-    cursor: pointer;
-    display: block;
+  .toggle-menu-bar {
+    background: rgba(138, 255, 222, 1);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     left: 0;
     padding: 6px 10px;
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 1000;    
+  }
+  .toggle-menu-bar-title {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: auto;
+    transform: rotate(270deg);
+    width: 30px;
+    z-index: 2000; 
+  }
+  .toggle-menu-btn {
+    margin-bottom: auto;
+    cursor: pointer;
+    width: 30px;
     .line{
       -o-transition: all 0.3s ease-in-out;
       -webkit-transition: all 0.3s ease-in-out;
@@ -108,7 +106,7 @@ main {
     border-right: 1px solid rgba(black, 0.1);
     color: black;
     height: 100%;
-    left: 0;
+    left: 30px;
     overflow: auto;
     position: fixed;
     top: 0;
@@ -145,9 +143,11 @@ main {
   .page-push-wrap {
     -webkit-transition: -webkit-transform 0.5s;
     height: 100%;
+    margin-left: auto;
     perspective: 1000px;
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    width: calc(100% - 50px);
     z-index: 99;
   }
   &.open {
@@ -156,8 +156,8 @@ main {
       transform: translate3d(0, 0, 0);
     } 
     .page-push-wrap {
-      -webkit-transform: translate3d(300px, 0, 0);
-      transform: translate3d(300px, 0, 0);
+      -webkit-transform: translate3d(280px, 0, 0);
+      transform: translate3d(280px, 0, 0);
     }
     .toggle-menu-btn .line {
       &:nth-child(1) {
