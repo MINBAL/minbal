@@ -13,6 +13,7 @@ page '/*.txt', layout: false
 
 page "/studio/*", :layout => "layout"
 page "/composition/*", :layout => "layout"
+page "/v2/*", :layout => "layout"
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout

@@ -1,26 +1,10 @@
-@import "../mixins/aspect-ratio";
-@import "../mixins/flexbox";
-@import "../mixins/flex-grid";
+@import "mixins/aspect-ratio";
+@import "mixins/flexbox";
+@import "mixins/flex-grid";
 
-body.composition {
-	iframe {
-		height: 100%;
-		width: 100%;
-	}
-	.videos {
-		margin: auto;
-		max-width: 1200px;
-		padding: 10px;
-		width: 100%;
-	}
-	footer {
-		display: none;
-	}
-}
-
-.hero-video {
-	@include aspect-ratio(16,9,iframe);
-	margin-bottom: 10px;
+iframe {
+	height: 100%;
+	width: 100%;
 }
 
 .two-video-grid {
@@ -42,6 +26,11 @@ body.composition {
 	li {
 		@include aspect-ratio(16,9,iframe);
 		margin-bottom: 10px;
+		&:hover {
+			.video-overlay {
+				opacity: 1;
+			}
+		}
 	}
 }
 
@@ -57,14 +46,6 @@ body.composition {
 }
 
 @media (min-width: $screen-lg) {
-	body.composition {
-		.videos {
-			padding: 20px;
-		}
-	}
-	.hero-video {
-		margin-bottom: 20px;
-	}
 	.two-video-grid {
 	  @include flexgrid(
 	    $columns: 2,
