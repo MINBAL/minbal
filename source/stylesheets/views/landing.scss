@@ -1,0 +1,61 @@
+body.v2 {
+	background: black;
+	color: white;
+	.toggle-menu-btn {
+		display: none;
+	}
+}
+
+.landing-hero {
+	background: black;
+	height: 100vh;
+	max-width: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	.landing-hero--video {
+		height: 100vh;
+		position: relative;
+		width: 100%;
+		video {
+			height: 100%;
+			left: 0px;    	
+			object-fit: cover;
+			position: absolute;
+			top: 0px;
+			width: 100%;
+		}
+	}
+	.landing-hero--overlay {
+		align-items: center;
+		background: linear-gradient(transparent, rgba(0,0,0,0.7)) bottom repeat;
+		bottom: 0;
+		display: flex;
+		flex-direction: row;
+		left: 0;
+		padding: 15px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 10;
+		.landing-hero--overlay-copy {
+			color: white;
+			margin: auto;
+			max-width: 1200px;			
+		}
+		h1 {
+			font-size: 10vw;
+		}
+	}
+}
+
+@media (min-width: $screen-lg) {
+	.landing-hero {
+		.landing-hero--overlay {
+			padding: 50px;
+			h1 {
+				font-size: 5vw;
+			}
+		}
+	}
+}

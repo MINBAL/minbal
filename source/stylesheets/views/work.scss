@@ -1,0 +1,22 @@
+body.work {
+	background: black;
+	color: white;
+}
+
+.work--container {
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 10px;
+	h2 {
+		font-size: 8vw;
+		margin: 50px 0;
+	}
+}
+
+@media (min-width: $screen-lg) {
+	.work--container {
+		h2 {
+			font-size: 3vw;
+		}
+	}
+}
