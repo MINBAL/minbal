@@ -26,6 +26,11 @@ iframe {
 	li {
 		@include aspect-ratio(16,9,iframe);
 		margin-bottom: 10px;
+		&:hover {
+			.video-overlay {
+				opacity: 1;
+			}
+		}
 	}
 }
 
