@@ -2,17 +2,15 @@
 @import "../mixins/flexbox";
 @import "../mixins/flex-grid";
 
-body.composition {
-	iframe {
-		height: 100%;
-		width: 100%;
-	}
-	.videos {
-		margin: auto;
-		max-width: 1200px;
-		padding: 10px;
-		width: 100%;
-	}
+iframe {
+	height: 100%;
+	width: 100%;
+}
+.videos {
+	margin: auto;
+	//max-width: 1200px;
+	padding: 10px;
+	width: 100%;
 }
 
 .hero-video {
@@ -54,7 +52,7 @@ body.composition {
 }
 
 @media (min-width: $screen-lg) {
-	body.composition {
+	.composition {
 		.videos {
 			padding: 20px;
 		}
