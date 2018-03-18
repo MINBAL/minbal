@@ -1,0 +1,24 @@
+.video-overlay {
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  align-items: center;
+  background: rgba(0,0,0,.8);
+  border: 10px solid white;
+  bottom: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+  transition: all 0.3s ease-in-out 0s;
+  width: 100%;
+  &:hover {
+    opacity: 1;
+  }
+}

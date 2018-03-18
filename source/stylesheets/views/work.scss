@@ -8,7 +8,7 @@ body.work {
 	margin: auto;
 	padding: 0 10px;
 	h2 {
-		font-size: 8vw;
+		font-size: 6vw;
 		margin: 50px 0;
 	}
 }
@@ -16,7 +16,9 @@ body.work {
 @media (min-width: $screen-lg) {
 	.work--container {
 		h2 {
-			font-size: 3vw;
+			border-left: 15px solid white;
+			font-size: 40px;
+			padding: 15px 0 15px 15px;
 		}
 	}
 }
