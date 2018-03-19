@@ -5,19 +5,22 @@ footer {
 	color: white;
 	font-size: 1.25em;
 	width: 100%;
+	a {
+		color: white;
+	}
 	.footer--inner {
     display: flex;
     flex-direction: column;
     height: 100%;
     margin: auto;
     max-width: 1200px;
- 	  padding: 50px 0;
+ 	  padding: 50px 10px;
     width: 100%;
 	}
 	.col-1,
 	.col-2 {
+		line-height: 2;
 		padding-bottom: 20px;
-		margin: auto;
 		width: 95%;
 	}
 }
@@ -29,7 +32,7 @@ footer {
 		}
 		.col-1,
 		.col-2 {
-			width: 50%;
+			width: 33%;
 		}
 	}
 }
