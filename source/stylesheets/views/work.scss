@@ -16,7 +16,7 @@ body.work {
 @media (min-width: $screen-lg) {
 	.work--container {
 		h2 {
-			border-left: 15px solid white;
+			border-left: 15px solid $red;
 			font-size: 40px;
 			margin: 80px 0;
 			padding: 30px;

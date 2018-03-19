@@ -24,8 +24,13 @@ iframe {
     $gutter: 10
   );
 	li {
-		@include aspect-ratio(16,9,iframe);
+		@include aspect-ratio(16,9,img);
+		cursor: pointer;
 		margin-bottom: 10px;
+		img {
+			display: block;
+			width: 100%;
+		}
 		&:hover {
 			.video-overlay {
 				opacity: 0;
