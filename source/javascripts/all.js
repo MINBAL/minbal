@@ -1,5 +1,4 @@
 // This is where it all goes :)
-var myLazyLoad = new LazyLoad();
 var pushContainer = document.querySelector('main');
 var toggleMenuButton = document.querySelector('.toggle-menu-btn');
 var pagePushNav = document.querySelector('.page-push-nav');
