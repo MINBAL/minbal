@@ -33,7 +33,14 @@ iframe {
 		}
 		&:hover {
 			.video-overlay {
-				opacity: 0;
+				h3, p {
+					opacity: 0;
+				}
+				background: rgba(0,0,0,.3);
+  			border: 1px solid white;
+				&:after {
+					opacity: 1;
+				}
 			}
 		}
 	}
