@@ -27,6 +27,7 @@ iframe {
 		@include aspect-ratio(16,9,img);
 		cursor: pointer;
 		margin-bottom: 20px!important;
+		overflow: hidden;
 		img {
 			display: block;
 			width: 100%;
