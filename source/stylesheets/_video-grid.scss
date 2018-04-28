@@ -31,18 +31,6 @@ iframe {
 			display: block;
 			width: 100%;
 		}
-		&:hover {
-			.video-overlay {
-				h3, p {
-					opacity: 0;
-				}
-				background: rgba(0,0,0,.3);
-  			border: 1px solid white;
-				&:after {
-					opacity: 1;
-				}
-			}
-		}
 	}
 }
 

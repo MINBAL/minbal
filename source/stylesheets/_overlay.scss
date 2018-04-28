@@ -2,8 +2,8 @@
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
   align-items: center;
-  background: rgba(0,0,0,.85);
-  border: 10px solid white;
+  background: rgba(0,0,0,.55);
+  border: 2px solid white;
   bottom: 0;
   cursor: pointer;
   display: flex;
@@ -11,13 +11,15 @@
   justify-content: center;
   left: 0;
   opacity: 1;
-  pointer-events: none;
   position: absolute;
   right: 0;
   text-transform: uppercase;
   top: 0;
   transition: all 0.3s ease-in-out 0s;
   width: 100%;
+  h3 {
+    font-size: 20px;
+  }
   &:after {
     color: white;
     content: '\25B6';
@@ -25,5 +27,14 @@
     opacity: 0;
     position: absolute;
     transition: opacity 0.3s ease-in-out 0s;
+  }
+  &:hover {
+    h3 {
+      opacity: 0;
+    }
+    background: rgba(0,0,0,.3);
+    &:after {
+      opacity: 1;
+    }
   }
 }
