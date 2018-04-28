@@ -11,13 +11,13 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="MINBAL" />
     <meta property="og:url" content="http://minbal.com" />
-    <meta property="og:description" content="Benjamin Balcom is a composer and a music producer for advertising, film, television and records." />
+    <meta property="og:description" content="Benjamin Balcom is a musician, composer, and music producer." />
     <meta property="og:image" content="https://s3.amazonaws.com/minbal/studio/optimized/bass_bw_desktop.jpg" />
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="http://minbal.com">
     <meta name="twitter:title" content="MINBAL">
-    <meta name="twitter:description" content="Benjamin Balcom is a composer and a music producer for advertising, film, television and records..">
+    <meta name="twitter:description" content="Benjamin Balcom is a musician, composer, and music producer.">
     <meta property="twitter:image" content="https://s3.amazonaws.com/minbal/studio/optimized/bass_bw_desktop.jpg"/>
 
     <!-- Use title if it's in the page YAML frontmatter -->
@@ -29,17 +29,8 @@
 
   <body class="<%= page_classes %>">
     <main class="">
-      <div class="toggle-menu-btn">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
-      </div>
-      <%= partial "page_push_nav" %>
-      <div class="page-push-wrap">
         <%= yield %>
         <%= partial "footer" %>
-      </div>
     </main>
   </body>
 
