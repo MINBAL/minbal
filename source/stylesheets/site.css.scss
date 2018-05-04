@@ -28,11 +28,11 @@ html {
 body {
   background: $black;
   color: $white;
-  font-family: $futura; 
+  font-family: $sans-serif; 
 }
 
 a {
-  font-family: $futura;
+  font-family: $sans-serif;
   text-decoration: none;
 }
 
@@ -113,7 +113,7 @@ ul {
     padding: 0 10px;
     h2 {
       border-left: 15px solid $red;
-      font-size: 40px;
+      font-size: 35px;
       margin: 80px 0;
     }
   }
