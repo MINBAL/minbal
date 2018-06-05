@@ -26,7 +26,7 @@ iframe {
 	li {
 		@include aspect-ratio(16,9,img);
 		cursor: pointer;
-		margin-bottom: 10px!important;
+		margin-bottom: 10px;
 		overflow: hidden;
 		img {
 			display: block;
