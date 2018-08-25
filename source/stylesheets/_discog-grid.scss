@@ -1,0 +1,107 @@
+@import "mixins/aspect-ratio";
+@import "mixins/flexbox";
+@import "mixins/flex-grid";
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.discog-entry-meta {
+	margin: 10px 0;
+}
+
+.two-discog-grid {
+  @include flexgrid(
+    $columns: 1,
+    $gutter: 10
+  );
+	li {
+		@include aspect-ratio(16,9,img);
+		margin-bottom: 10px;
+	}
+}
+
+.three-discog-grid {
+  @include flexgrid(
+    $columns: 2,
+    $gutter: 10
+  );
+	li {
+		@include aspect-ratio(1,1,img);
+		cursor: pointer;
+		margin-bottom: 10px;
+		overflow: hidden;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+.four-discog-grid {
+  @include flexgrid(
+    $columns: 2,
+    $gutter: 10
+  );
+	li {
+		@include aspect-ratio(1,1,img);
+		margin-bottom: 10px;
+	}
+}
+
+.five-discog-grid {
+	font-size: 12px;
+  @include flexgrid(
+    $columns: 2,
+    $gutter: 10
+  );
+  li {
+  	line-height: 1.3;
+  	margin-bottom: 5px;  	
+  }
+  a {
+  	&:hover {
+  		opacity: .8;
+  	}
+  }
+	.discog-entry-art {
+		@include aspect-ratio(1,1,a);
+	}
+}
+
+@media (min-width: $screen-lg) {
+	.two-discog-grid {
+	  @include flexgrid(
+	    $columns: 2,
+	    $gutter: 20
+	  );
+	  li {
+	  	margin-bottom: 20px;
+	  }
+	}
+	.three-discog-grid {
+	  @include flexgrid(
+	    $columns: 3,
+	    $gutter: 20
+	  );
+	  li {
+	  	margin-bottom: 20px;
+	  }
+	}
+	.four-discog-grid {
+	  @include flexgrid(
+	    $columns: 4,
+	    $gutter: 40
+	  );
+	  li {
+	  	margin-bottom: 40px;
+	  }
+	}
+	.five-discog-grid {
+	  @include flexgrid(
+	    $columns: 5,
+	    $gutter: 20
+	  );
+	}
+}
