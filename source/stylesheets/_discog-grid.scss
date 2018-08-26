@@ -46,10 +46,10 @@ img {
 	}
 }
 
-.five-discog-grid {
-	font-size: 12px;
+.six-discog-grid {
+	font-size: 8.5px;
   @include flexgrid(
-    $columns: 2,
+    $columns: 3,
     $gutter: 10
   );
   li {
@@ -95,9 +95,10 @@ img {
 	  	margin-bottom: 40px;
 	  }
 	}
-	.five-discog-grid {
+	.six-discog-grid {
+	  font-size: 10.5px;
 	  @include flexgrid(
-	    $columns: 5,
+	    $columns: 6,
 	    $gutter: 20
 	  );
 		.discog-entry-art {
