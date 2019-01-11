@@ -4,6 +4,8 @@
 
 config[:site_url] = ''
 
+activate :directory_indexes
+
 # Per-page layout changes:
 #
 # With no layout

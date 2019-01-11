@@ -2,11 +2,6 @@
 @import "mixins/flexbox";
 @import "mixins/flex-grid";
 
-iframe {
-	height: 100%;
-	width: 100%;
-}
-
 .two-video-grid {
   @include flexgrid(
     $columns: 1,
