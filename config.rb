@@ -4,6 +4,8 @@
 
 config[:site_url] = ''
 
+# Directory Indexes
+
 activate :directory_indexes
 
 # Per-page layout changes:
@@ -42,7 +44,7 @@ end
 configure :build do
   # Minify CSS on build
   activate :minify_css
-  activate :directory_indexes
+
   # Minify Javascript on build
   # activate :minify_javascript
   activate :relative_assets
