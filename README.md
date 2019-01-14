@@ -6,7 +6,7 @@
 
 ### Running the site locally
 
-  1. Always start with a fresh branch of master by running `git pull` to pickup any changes that have been made. 
+  1. *Always start with a fresh branch of master by running `git pull` to pickup any changes that have been made.* 
 
   2. Run `middleman` to develop on your local machine 
 
