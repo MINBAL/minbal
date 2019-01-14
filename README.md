@@ -10,7 +10,7 @@
 
   2. Run `middleman` to develop on your local machine 
 
-          go to http://localhost:4567 to see your site. It should automatically rerfresh after any changes habe been made and saved in the text editor of your choice.
+          go to http://localhost:4567 to see your site. It should automatically refresh after any changes habe been made and saved in the text editor of your choice.
           
 ### Commiting your changes
 
