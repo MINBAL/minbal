@@ -12,6 +12,8 @@
 
           go to http://localhost:4567 to see your site. It should automatically refresh after any changes habe been made and saved in the text editor of your choice.
           
+  3. Press `ctrl + c` to close/end your local server. 
+          
 ### Commiting your changes
 
   1. Run `git add .` to stage any new files that have been created
