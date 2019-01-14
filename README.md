@@ -2,7 +2,7 @@
 
   1. Run `gem install middleman` (only for intial setup)
 
-  2. Run `bundle install` to make sure all the things are there (this only needs to be done for intial setup or if new packages have been added 
+  2. Run `bundle install` to make sure all the things are there (this only needs to be done for intial setup or if new packages have been added) 
 
 ### Running the site locally
 
@@ -22,4 +22,4 @@
 
 ### Deploy to gh-pages
 
-  1. Run `middleman deploy` this build your website in a folder called `source` and then deploy that folder to production. It may take 5-10 minutes to see the changes in production. 
+  1. Run `middleman deploy` this command will build your website in a folder called `source` and then deploy that folder to production (we are using github pages for hosting). It may take 5-10 minutes to see the changes in production. 
